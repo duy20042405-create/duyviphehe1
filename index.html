@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>duyviphehehe</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    #intro {
+      color: white;
+      font-size: 32px;
+      text-align: center;
+    }
+    #scare {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Lời nhử -->
+  <div id="intro">👉 ấn vào đây mauuu!! 👈</div>
+
+  <!-- Video jumpscare -->
+  <div id="scare">
+    <iframe id="video"
+      src="https://www.youtube.com/embed/5W9tzeREK-w?autoplay=1"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <script>
+    document.body.addEventListener("click", () => {
+      document.getElementById("intro").style.display = "none";
+      document.getElementById("scare").style.display = "block";
+    });
+  </script>
+</body>
+</html>
